@@ -1,0 +1,17 @@
+<?php
+namespace {{ namespace }};
+
+use App\Phooty\Contracts\PlayerAction;
+use App\Phooty\Concerns\IsPlayerAction;
+
+class {{ class }} extends BaseAction implements PlayerAction
+{
+    use IsPlayerAction;
+
+    protected $duration = 1000;
+
+    protected function process()
+    {
+
+    }
+}

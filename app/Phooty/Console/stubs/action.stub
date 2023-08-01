@@ -1,0 +1,12 @@
+<?php
+namespace {{ namespace }};
+
+class {{ class }} extends BaseAction
+{
+    protected $duration = 1000;
+
+    protected function process()
+    {
+
+    }
+}
