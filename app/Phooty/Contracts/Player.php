@@ -1,7 +1,7 @@
 <?php
 namespace App\Phooty\Contracts;
 
-interface Player
+interface Player extends Identifiable
 {
     public function getFirstName(): string;
 
