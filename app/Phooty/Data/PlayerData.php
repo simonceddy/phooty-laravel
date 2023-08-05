@@ -1,13 +1,13 @@
 <?php
-namespace App\Phooty\Concerns;
+namespace App\Phooty\Data;
 
-trait IsPlayer
+class PlayerData
 {
-    protected string $surname;
-
-    protected string $firstName;
-
-    protected ?string $nickname;
+    public function __construct(
+        private string $firstName,
+        private string $surname,
+        private ?string $nickname = null
+    ) {}
 
     public function getSurname(): string
     {

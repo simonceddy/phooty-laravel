@@ -1,5 +1,6 @@
 <?php
 
+use App\Phooty\Contracts\Footy;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    dd(app());
+    dd(app(Footy::class));
 });
