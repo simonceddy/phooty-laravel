@@ -14,7 +14,19 @@ interface Ground
      */
     public function getGrid(): Grid;
 
+    /**
+     * Gets the Team associated with the ground, or null if none is set.
+     *
+     * @return Team|null
+     */
     public function getTeam(): ?Team;
 
+    /**
+     * Get the name of the ground.
+     *
+     * This should be the full ground name, e.g. 'Melbourne Cricket Ground'
+     *
+     * @return string
+     */
     public function getName(): string;
 }

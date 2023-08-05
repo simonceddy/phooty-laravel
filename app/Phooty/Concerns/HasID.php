@@ -1,14 +1,18 @@
 <?php
 namespace App\Phooty\Concerns;
 
-use Ramsey\Uuid\UuidInterface;
+use Ramsey\Uuid\{Uuid, UuidInterface};
 
 trait HasID
 {
     protected UuidInterface $id;
 
-    public function getId()
+    public function getId(): UuidInterface
     {
+        if (!isset($this->id)) {
+            $this->id = Uuid::uuid4();
+        }
+
         return $this->id;
     }
 }

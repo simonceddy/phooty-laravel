@@ -1,7 +1,17 @@
 <?php
 namespace App\Phooty\Contracts;
 
+// TODO
+
+/**
+ * The Payload object contains all mutable data used by the simulation.
+ */
 interface Payload
 {
-    public function getTeam($id): ?Team;
+    /**
+     * Get the simulation's Grid object.
+     *
+     * @return Grid
+     */
+    public function getGrid(): Grid;
 }
