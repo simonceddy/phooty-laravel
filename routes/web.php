@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GetJumper;
 use App\Phooty\Contracts\Footy;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/jumper', GetJumper::class);
 
 Route::get('/', function () {
     dd(app(Footy::class));
