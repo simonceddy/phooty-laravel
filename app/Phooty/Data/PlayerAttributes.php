@@ -43,6 +43,8 @@ class PlayerAttributes implements \JsonSerializable, \ArrayAccess
         'defense' => 5,
         'ruck' => 2,
         'handling' => 5,
+        'scoring' => 5,
+        'spoiling' => 4,
     ];
 
     /**

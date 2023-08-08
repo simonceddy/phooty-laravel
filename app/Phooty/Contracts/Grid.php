@@ -26,4 +26,52 @@ interface Grid
      * @return int
      */
     public function getWidth(): int;
+
+    /**
+     * Return the coords for the given player. Return null if player is not found.
+     *
+     * Coords must be an array containing two numbers corresponding to x and y coordinates.
+     *
+     * @param Player $player
+     *
+     * @return ?array
+     */
+    public function getPlayerCoords(Player $player): ?array;
+
+    /**
+     * Set the coordinates for a player
+     *
+     * @param Player $player
+     * @param int|float $x
+     * @param int|float $y
+     *
+     * @return void
+     */
+    public function setPlayerCoords(Player $player, mixed $x, mixed $y): void;
+
+    /**
+     * Remove the given player's coordinates from the grid.
+     *
+     * @param Player $player
+     *
+     * @return void
+     */
+    public function removePlayer(Player $player): void;
+
+    /**
+     * Return the current coordinates of the footy
+     *
+     * @return array
+     */
+    public function getFootyCoords(): array;
+
+    /**
+     * Set the current coordinates of the footy
+     *
+     * @param int|float $x
+     * @param int|float $y
+     *
+     * @return void
+     */
+    public function setFootyCoords(mixed $x, mixed $y): void;
 }
